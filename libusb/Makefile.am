@@ -46,6 +46,9 @@ OS_SRC += os/linux_udev.c
 else
 OS_SRC += os/linux_netlink.c
 endif
+if PLATFORM_ANDROID
+OS_SRC += os/linux_android_jni.c
+endif
 endif
 
 if OS_NETBSD

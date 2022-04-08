@@ -367,6 +367,7 @@ AM_CONDITIONAL([OS_SUNOS], [test "x$backend" = xsunos])
 AM_CONDITIONAL([OS_WINDOWS], [test "x$backend" = xwindows])
 AM_CONDITIONAL([PLATFORM_POSIX], [test "x$platform" = xposix])
 AM_CONDITIONAL([PLATFORM_WINDOWS], [test "x$platform" = xwindows])
+AM_CONDITIONAL([PLATFORM_ANDROID], [test "x$is_android_linux" = xyes])
 AM_CONDITIONAL([USE_UDEV], [test "x$use_udev" = xyes])
 
 dnl The -Wcast-function-type warning causes a flurry of warnings when compiling
